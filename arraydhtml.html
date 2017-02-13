@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dynamic Styles</title>
+        <style>
+            ul {display:none;}
+        </style>
+    </head>
+
+    <body>
+        <h1>Welcome to Dynamic HTML</h1>
+
+        <p><a href="#">Dynamic styles are a key feature of DHTML.</a></p>
+
+        <ul>
+            <li>Change the color, size, and typeface of text</li>
+            <li>Show and hide text</li>
+            <li>And much, much more</li>
+        </ul>
+
+        <p>We've only just begun!</p>
+		
+		<h1>learn following lang</h1>
+
+		<p><a href="#">Languages</a></p>
+		<ul>
+		   <li>HTML</li>
+		   <li>JSP</li>
+		   <li>CSS</li>
+		   <li>php</li>
+		   <li>JSON</li>
+		</ul>
+
+        <script>
+            showMe = function () {
+                document.getElementsByTagName("h1")[0].style.color = "#990000";
+                document.getElementsByTagName("ul")[0].style.display = "block";
+				
+            };
+
+            document.getElementsByTagName("a")[0].onclick = function (e) {
+                e.preventDefault();
+                showMe();
+            };
+			
+			langu=function(){
+			   document.getElementByTagName("h1")[1].style.color="#990000";
+			   document.getElementsByTagName("ul")[1].style.display = "block";
+			   
+			};
+			 document.getElementsByTagName("a")[1].onclick = function (e) {
+                e.preventDefault();
+                langu();
+            };
+        </script>
+    </body>
+</html>
